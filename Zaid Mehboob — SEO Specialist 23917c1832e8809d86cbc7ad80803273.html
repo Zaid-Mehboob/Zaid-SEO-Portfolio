@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Zaid Mehboob — SEO Specialist</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(115, 114, 110, 1);
+	fill: rgba(115, 114, 110, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(205, 60, 58, 1);
+	fill: rgba(205, 60, 58, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-default { background-color: rgba(84, 72, 49, 0.08); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="23917c18-32e8-809d-86cb-c7ad80803273" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/briefcase_gray.svg"/></div><h1 class="page-title">Zaid Mehboob — <strong>SEO Specialist</strong></h1><p class="page-description"></p></header><div class="page-body"><p id="23917c18-32e8-803b-8c71-da5efb34e4ef" class="">Helping businesses grow with smart search strategy and content.</p><hr id="23917c18-32e8-813e-9fa2-e63768411a22"/><div id="23917c18-32e8-8122-bb48-e7e353499328" class="column-list"><div id="23917c18-32e8-81cb-b5de-f043dfda3bd9" style="width:25%" class="column"><figure id="23917c18-32e8-8101-a102-dfc3545d96db" class="image"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/imgi_1_485379261_2070342456814127_3249264507066849385_n.jpg"><img style="width:528px" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/imgi_1_485379261_2070342456814127_3249264507066849385_n.jpg"/></a></figure><p id="23917c18-32e8-8172-b1b3-d625bf280395" class="">Hi there! I’m Zaid Mehboob</p><h1 id="23917c18-32e8-8101-a6eb-e8ba84c04848" class="">Get in  touch</h1><div id="23917c18-32e8-812c-9d11-f35c55d1b13c" class="column-list"><div id="23917c18-32e8-8113-b876-cfa03603c530" style="width:100%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-81d7-96b5-cd29553e6871"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/mail_gray.svg"/></div><div style="width:100%"><a href="mailto:smzaidmehboob2@gmail.com">Email</a></div></figure></div><div id="23917c18-32e8-8167-8299-f14c42a79038" style="width:100%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-81c4-a663-e1eae5bfdac1"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/phone-call_gray.svg"/></div><div style="width:100%"><a href="tel:+923372387689">Phone</a></div></figure></div></div><h1 id="23917c18-32e8-81e5-84f8-e1f960dd8604" class="">Skill Set</h1><hr id="23917c18-32e8-81b3-9dbb-faa9ed169e08"/><p id="23917c18-32e8-8169-b35d-e67fd1bb0852" class="">🌐 Off-Page SEO</p><p id="23917c18-32e8-81e3-867d-d497ee156dc2" class="">🌐 On-Page SEO</p><p id="23917c18-32e8-814a-8aea-faa39eaa1e08" class="">🌐 Keyword Research</p><p id="23917c18-32e8-815b-9031-d8c974b52920" class="">🌐 Analytics &amp; Reporting</p><p id="23917c18-32e8-8131-a661-e1d693fb457f" class="">🌐 SEO Audits</p><h1 id="23917c18-32e8-8137-8ce5-cbe819ce6097" class="">Certifications</h1><hr id="23917c18-32e8-815d-8bba-fff9d270bc0a"/><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-81f1-82d5-e304e6a3bb36"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/arrow-right_gray.svg"/></div><div style="width:100%">The Fundamentals of Digital Marketing By - Google Diigital Garage</div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-8173-bfd3-f331891ecd0f"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/arrow-right_gray.svg"/></div><div style="width:100%">The Fundamentals of Digital Marketing By - Google Diigital Garage</div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-8193-a6de-d261897e0bbb"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/arrow-right_gray.svg"/></div><div style="width:100%">The Fundamentals of Digital Marketing By - Google Diigital Garage</div></figure><h1 id="23917c18-32e8-814e-b1dc-d58633bd62fc" class="">Education</h1><hr id="23917c18-32e8-8152-9670-fab39fbd3663"/><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-812e-a77b-ee75a8517f45"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/arrow-right_gray.svg"/></div><div style="width:100%">Intermediate (Computer Science)</div></figure><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-8144-8196-ea5c0e7801b6"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/arrow-right_gray.svg"/></div><div style="width:100%">Matriculation (Science)</div></figure><hr id="23917c18-32e8-81b1-b746-f9f6b37e9bcf"/></div><div id="23917c18-32e8-81ab-b513-eb07912a52b3" style="width:75%" class="column"><h1 id="23917c18-32e8-813c-b20d-cf5059323cd4" class="">About Me</h1><hr id="23917c18-32e8-8136-b1aa-de8c7077f136"/><p id="23917c18-32e8-8143-89a7-e8366d9b6c44" class="">I help businesses grow organically by improving their search engine visibility. </p><p id="23917c18-32e8-80d0-b563-e3f25ecf0b45" class="">From SEO audits to strategic content and keyword planning, I bring measurable results that build traffic and brand authority.</p><div id="23917c18-32e8-8174-9d5b-e34ddc1e97fc" class="column-list"><div id="23917c18-32e8-8150-b692-dcbbb0b66491" style="width:300%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-8120-99e2-ff6ce85b8c11"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/branch-merge_gray.svg"/></div><div style="width:100%"><a href="https://github.com/Zaid-Mehboob">Zaid-Mehboob</a></div></figure></div><div id="23917c18-32e8-812f-861d-e7d6422f0254" style="width:100%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-812b-bf5e-fc4c2a9de48a"><div style="font-size:1.5em"><img class="icon" src="https://i.pinimg.com/736x/92/d1/db/92d1db1521d374335498624cc95e9554.jpg"/></div><div style="width:100%"><p id="23917c18-32e8-8169-a249-f0fd246f0a00" class=""><a href="https://pk.linkedin.com/in/sm-zaid-mehboob">SM-Zaid-Mehboob</a></p></div></figure></div><div id="23917c18-32e8-81d7-a0b4-dbd6b1d5c27b" style="width:300%" class="column"><figure class="block-color-default callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-812b-a1e2-f4892d6a86f8"><div style="font-size:1.5em"><img class="icon" src="https://i.pinimg.com/originals/b6/99/1c/b6991c27a36077737c09a40cb31ecdef.jpg"/></div><div style="width:100%"><a href="https://www.facebook.com/zaid.mehboob.56/">Zaid Mehboob</a></div></figure></div></div><h1 id="23917c18-32e8-8170-843a-e6c112854eac" class="">My Services</h1><p id="23917c18-32e8-81e0-ab37-c89fd385a37e" class="">Checkout services offered by me</p><hr id="23917c18-32e8-8131-8a0a-d69b95845233"/><div id="23917c18-32e8-8143-85a3-ff1a1cdb38e7" class="collection-content"><h4 class="collection-title">Services</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><div data-testid="/icons/font_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/font_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/font_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Name</th></tr></thead><tbody><tr id="23917c18-32e8-8177-a0bb-c9b824aa9ccf"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/On-Page%20SEO%20Optimization%2023917c1832e88177a0bbc9b824aa9ccf.html"><img class="icon" src="https://www.notion.so/icons/departures_gray.svg"/>On-Page SEO Optimization</a></td></tr><tr id="23917c18-32e8-8185-acf6-f2cc45ac20f9"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/Keyword%20Research%20&amp;%20Mapping%2023917c1832e88185acf6f2cc45ac20f9.html"><img class="icon" src="https://www.notion.so/icons/verified_gray.svg"/>Keyword Research &amp; Mapping</a></td></tr><tr id="23917c18-32e8-8159-98bf-d4bac4208108"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/Content%20Strategy%20&amp;%20Writing%2023917c1832e8815998bfd4bac4208108.html"><img class="icon" src="https://www.notion.so/icons/sailboat_gray.svg"/>Content Strategy &amp; Writing</a></td></tr><tr id="23917c18-32e8-81b8-8de5-ec5eef074847"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/Technical%20SEO%20Audits%2023917c1832e881b88de5ec5eef074847.html"><img class="icon" src="https://www.notion.so/icons/news_gray.svg"/>Technical SEO Audits</a></td></tr><tr id="23917c18-32e8-8179-959a-e3a256aca879"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/Backlink%20Building%20&amp;%20Outreach%2023917c1832e88179959ae3a256aca879.html"><img class="icon" src="https://www.notion.so/icons/compose_gray.svg"/>Backlink Building &amp; Outreach</a></td></tr><tr id="23917c18-32e8-8196-afa9-c760038ff337"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/SEO%20Analytics%20&amp;%20Reporting%2023917c1832e88196afa9c760038ff337.html"><img class="icon" src="https://www.notion.so/icons/wrench_gray.svg"/>SEO Analytics &amp; Reporting</a></td></tr><tr id="23917c18-32e8-8086-90f4-e82877f41f3e"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Services%2023917c1832e8814385a3ff1a1cdb38e7/Untitled%2023917c1832e8808690f4e82877f41f3e.html">Untitled</a></td></tr></tbody></table><br/><br/></div><h1 id="23917c18-32e8-81b3-9475-dc3f1e1b7e46" class="">Tools</h1><hr id="23917c18-32e8-8168-a00b-c45bbd3e2e60"/><div id="23917c18-32e8-8168-801f-ec77dc2a32d5" class="collection-content"><h4 class="collection-title">Tools</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><div data-testid="/icons/font_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/font_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/font_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Name</th><th><span class="icon property-icon"><div data-testid="/icons/arrow-circle-down_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/arrow-circle-down_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/arrow-circle-down_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Level of expertise</th></tr></thead><tbody><tr id="23917c18-32e8-818d-9db0-e81253c0fc36"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Semrush%2023917c1832e8818d9db0e81253c0fc36.html"><img class="icon" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Semrush%2023917c1832e8818d9db0e81253c0fc36/imgi_1_-1f98f505180d14739e58c06d7a11eaea.png"/>Semrush</a></td><td class="cell-q?me"><span class="selected-value select-value-color-green">Expert</span></td></tr><tr id="23917c18-32e8-8163-821d-cb5a0842453d"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Ahrefs%2023917c1832e88163821dcb5a0842453d.html"><img class="icon" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Ahrefs%2023917c1832e88163821dcb5a0842453d/Ahrefs-Logo-Compact-Transparent.png"/>Ahrefs</a></td><td class="cell-q?me"><span class="selected-value select-value-color-green">Expert</span></td></tr><tr id="23917c18-32e8-8145-b98e-deecb9c7828c"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Google%20Analytics%2023917c1832e88145b98edeecb9c7828c.html"><img class="icon" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Google%20Analytics%2023917c1832e88145b98edeecb9c7828c/google_analytics-icon.svg"/>Google Analytics</a></td><td class="cell-q?me"><span class="selected-value select-value-color-green">Expert</span></td></tr><tr id="23917c18-32e8-815a-a5ab-d68e63bd107a"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Google%20Search%20Console%2023917c1832e8815aa5abd68e63bd107a.html"><img class="icon" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Google%20Search%20Console%2023917c1832e8815aa5abd68e63bd107a/google-search-console.svg"/>Google Search Console</a></td><td class="cell-q?me"><span class="selected-value select-value-color-green">Expert</span></td></tr><tr id="23917c18-32e8-81f4-a283-f20ae41991a4"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Meta%20Business%20Suite%2023917c1832e881f4a283f20ae41991a4.html"><img class="icon" src="data:image/png;base64,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"/>Meta Business Suite</a></td><td class="cell-q?me"><span class="selected-value select-value-color-blue">Intermediate</span></td></tr><tr id="23917c18-32e8-8148-aaf5-cc407bb4d568"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Adobe%20Photoshop%2023917c1832e88148aaf5cc407bb4d568.html"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png"/>Adobe Photoshop</a></td><td class="cell-q?me"><span class="selected-value select-value-color-blue">Intermediate</span></td></tr><tr id="23917c18-32e8-809f-b27b-edf1706ca851"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Canva%2023917c1832e8809fb27bedf1706ca851.html"><img class="icon" src="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Tools%2023917c1832e88168801fec77dc2a32d5/Canva%2023917c1832e8809fb27bedf1706ca851/imgi_257_canva-icon-logo-symbol-free-png.png"/>Canva</a></td><td class="cell-q?me"><span class="selected-value select-value-color-blue">Intermediate</span></td></tr></tbody></table><br/><br/></div><h1 id="23917c18-32e8-8137-a4c4-c8bc2f22423e" class="">Work Experience</h1><hr id="23917c18-32e8-8123-8b7b-c78c5e98ebf8"/><figure class="block-color-purple callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-810f-bb2e-eb75a4b39358"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/tortoise_gray.svg"/></div><div style="width:100%"><mark class="highlight-red"><strong>SEO Executive<br/><br/></strong></mark>SEO Factors  <mark class="highlight-gray">(2025 - Till Now)<br/><br/>Leading SEO strategies, optimizing content, and improving search rankings for various apps and services.<br/></mark></div></figure><figure class="block-color-purple callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-815b-8bbd-c8498977e51d"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/tortoise_gray.svg"/></div><div style="width:100%"><mark class="highlight-red"><strong>Jr. SEO Executive<br/><br/></strong></mark>Vintage Jackets SMC Private Ltd <mark class="highlight-gray">(2020 - 2023)<br/><br/>Assisted in SEO efforts to enhance visibility, improve website rankings, and optimize content for user engagement.<br/></mark></div></figure><figure class="block-color-purple callout" style="white-space:pre-wrap;display:flex" id="23917c18-32e8-81ef-8f62-de46d9c19866"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/tortoise_gray.svg"/></div><div style="width:100%"><mark class="highlight-red"><strong>SEO Internship <br/><br/></strong></mark>PineMax &amp; CO <mark class="highlight-gray">(2019 - 2020)<br/><br/>Supported SEO campaigns by implementing on-page optimization, keyword research, and improving search engine rankings.<br/></mark></div></figure><p id="23917c18-32e8-800c-8c5e-f2964a69210a" class="">
+</p><h1 id="23917c18-32e8-8102-8f01-da7eca4a420c" class="">Why Choose Me</h1><p id="23917c18-32e8-81f1-891a-ff39d115ecce" class="">
+</p><p id="23917c18-32e8-801e-8740-e8dfdc91a8a2" class="">With a passion for SEO, a track record of measurable results, and a commitment to staying updated with industry trends,</p><p id="23917c18-32e8-80be-9681-c1723ca691de" class=""> I deliver optimized strategies that drive growth and visibility for businesses.</p></div></div><hr id="23917c18-32e8-815b-b3b2-d779ece31dd3"/><h1 id="23917c18-32e8-8160-9c2f-eea04a3d06ab" class="">SEO Work Portfolio</h1><hr id="23917c18-32e8-815a-9bfb-e9515dd0ee00"/><div id="23917c18-32e8-81f3-9078-c40e1e96b8c2" class="collection-content"><h4 class="collection-title">Portfolio Items</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><div data-testid="/icons/font_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/font_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/font_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Name</th><th><span class="icon property-icon"><div data-testid="/icons/description_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/description_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/description_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Description</th></tr></thead><tbody><tr id="23917c18-32e8-8111-962a-f42130aa1804"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%2023917c1832e881f39078c40e1e96b8c2/William%20Jacket%20E-commerce%20Website%2023917c1832e88111962af42130aa1804.html"><img class="icon" src="https://www.notion.so/icons/coat_gray.svg"/>William Jacket E-commerce Website</a></td><td class="cell-p}A:"><strong>SEO Strategy</strong>: Conducted thorough keyword research and optimized product pages for better rankings and user experience.<br/>T<br/><strong>ools Used</strong>: Google Analytics, SEMrush, Google Search Console.<br/><br/><br/></td></tr><tr id="23917c18-32e8-81cb-b55d-e657e4542e3e"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%2023917c1832e881f39078c40e1e96b8c2/Oskar%20Jackets%2023917c1832e881cbb55de657e4542e3e.html"><img class="icon" src="https://www.notion.so/icons/tshirt_gray.svg"/>Oskar Jackets</a></td><td class="cell-p}A:"><strong>SEO Strategy</strong>: Conducted thorough keyword research and optimized product pages for better rankings and user experience.<br/>T<br/><strong>ools Used</strong>: Google Analytics, SEMrush, Google Search Console.<br/><br/><br/></td></tr><tr id="23917c18-32e8-8152-af2e-f932fdf205b6"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%2023917c1832e881f39078c40e1e96b8c2/Vintage%20Jackets%2023917c1832e88152af2ef932fdf205b6.html"><img class="icon" src="https://www.notion.so/icons/skirt_gray.svg"/>Vintage Jackets</a></td><td class="cell-p}A:"><strong>SEO Strategy</strong>: Conducted thorough keyword research and optimized product pages for better rankings and user experience.<br/>T<br/><strong>ools Used</strong>: Google Analytics, SEMrush, Google Search Console.<br/><br/><br/></td></tr></tbody></table><br/><br/></div><p id="23917c18-32e8-8154-97f4-f49c5bebca5d" class="">
+</p><hr id="23917c18-32e8-81ca-81c8-eaceb9675318"/><h1 id="23917c18-32e8-80ea-914e-d94f59b55e17" class="">Metrics And Analytics</h1><hr id="23917c18-32e8-80fe-8660-c58c097c36a1"/><div id="23917c18-32e8-80f0-b4ef-f9a800ce3774" class="collection-content"><h4 class="collection-title">Portfolio Items (1)</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><div data-testid="/icons/font_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/font_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/font_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Name</th><th><span class="icon property-icon"><div data-testid="/icons/description_gray.svg" style="width:14px;height:14px;flex-shrink:0;transform:scale(1.2);mask:url(/icons/description_gray.svg?mode=light) no-repeat center;-webkit-mask:url(/icons/description_gray.svg?mode=light) no-repeat center;background-color:rgba(71, 70, 68, 0.6);fill:rgba(71, 70, 68, 0.6)"></div></span>Description</th></tr></thead><tbody><tr id="23917c18-32e8-81f4-9bdc-d67b7022d87b"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%20(1)%2023917c1832e880f0b4eff9a800ce3774/Semrush%20Site%20Metrics%2023917c1832e881f49bdcd67b7022d87b.html"><img class="icon" src="https://www.notion.so/icons/arrows-swap-horizontally_gray.svg"/>Semrush Site Metrics</a></td><td class="cell-p}A:"><strong>Showcasing The Improvement In Performance Of The Respective Site</strong></td></tr><tr id="23917c18-32e8-8110-a326-c0230554b35f"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%20(1)%2023917c1832e880f0b4eff9a800ce3774/Keyword%20Research%2023917c1832e88110a326c0230554b35f.html"><img class="icon" src="https://www.notion.so/icons/zoom-in_gray.svg"/>Keyword Research</a></td><td class="cell-p}A:"></td></tr><tr id="23917c18-32e8-81dc-a86d-d86feceea6d6"><td class="cell-title"><a href="Zaid%20Mehboob%20%E2%80%94%20SEO%20Specialist%2023917c1832e8809d86cbc7ad80803273/Portfolio%20Items%20(1)%2023917c1832e880f0b4eff9a800ce3774/Site%20Domain%20Mapping%2023917c1832e881dca86dd86feceea6d6.html"><img class="icon" src="https://www.notion.so/icons/sliders-vertical_gray.svg"/>Site Domain Mapping</a></td><td class="cell-p}A:"><br/><br/><br/></td></tr></tbody></table><br/><br/></div><p id="23917c18-32e8-80fc-b2b4-e2731cf769bb" class="">
+</p><hr id="23917c18-32e8-80c6-95c2-d1e98795cd45"/><p id="23917c18-32e8-80f4-83d4-c1a25f42a776" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
